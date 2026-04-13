@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/external/">
+    <Project Path="external/ExtenderApp.Buffer/src/ExtenderApp.Buffer.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ExtenderApp.Serialization.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/ExtenderApp.Serialization.Tests/ExtenderApp.Serialization.Tests.csproj" />
+  </Folder>
+</Solution>
