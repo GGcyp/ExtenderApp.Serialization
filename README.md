@@ -55,6 +55,18 @@ dotnet add <你的业务项目>.csproj reference src/ExtenderApp.Serialization.c
 
 然后在代码中按你公开的 API 进行序列化/反序列化调用。
 
+### 在宿主仓库复用现有 Buffer 项目
+
+如果你的宿主仓库已经维护了 `ExtenderApp.Buffer`（例如放在 `external/ExtenderApp.Buffer/`），可以让 `ExtenderApp.Serialization` 直接引用宿主仓库中的 Buffer 工程，而不是在当前子仓库内再维护一份。
+
+建议做法：
+
+- 在宿主解决方案中同时纳入 `ExtenderApp.Buffer` 与 `ExtenderApp.Serialization`
+- 将 `ExtenderApp.Serialization.csproj` 中的 `ProjectReference` 调整为指向宿主仓库的 Buffer 路径
+- 本地验证 `dotnet build` 与 `dotnet test` 后再决定是否需要提交该路径调整
+
+该方式适合多仓库聚合场景，可避免重复维护 Buffer 依赖目录。
+
 ## 开发与提交建议
 
 - 提交前建议执行：
