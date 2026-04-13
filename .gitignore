@@ -1,0 +1,19 @@
+# Build outputs
+**/bin/
+**/obj/
+
+# Test outputs
+**/TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# IDE files
+.vs/
+.vscode/
+.idea/
+
+# User-specific files
+*.user
+*.suo
+
