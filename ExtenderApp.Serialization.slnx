@@ -4,9 +4,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Folder Name="/lib/">
-    <File Path="lib/ExtenderApp.Buffer.dll" />
-  </Folder>
   <Folder Name="/src/">
     <Project Path="src/ExtenderApp.Serialization.csproj" />
   </Folder>
