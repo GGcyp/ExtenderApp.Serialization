@@ -4,8 +4,8 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Folder Name="/external/">
-    <Project Path="external/ExtenderApp.Buffer/src/ExtenderApp.Buffer.csproj" />
+  <Folder Name="/lib/">
+    <File Path="lib/ExtenderApp.Buffer.dll" />
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/ExtenderApp.Serialization.csproj" />

@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\external\ExtenderApp.Buffer\src\ExtenderApp.Buffer.csproj" />
+    <Reference Include="ExtenderApp.Buffer">
+      <HintPath>..\lib\ExtenderApp.Buffer.dll</HintPath>
+    </Reference>
   </ItemGroup>
-
 </Project>
